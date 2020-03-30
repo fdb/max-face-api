@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expressions</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: sans-serif;
+      }
+
+      #video-wrapper {
+        position: relative;
+        width: 500px;
+        height: auto;
+      }
+
+      video,
+      canvas {
+        max-width: 100%;
+      }
+
+      #overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="video-wrapper">
+      <video id="video" autoplay muted playsinline></video>
+      <canvas id="overlay"></canvas>
+    </div>
+    <script src="js/face-api.min.js"></script>
+    <script src="js/expressions.js"></script>
+  </body>
+</html>
